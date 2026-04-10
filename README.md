@@ -1,5 +1,5 @@
 Tugas 1 <br>
-NAMA : VALEDHIKA FIKRI <br>\
+NAMA : VALEDHIKA FIKRI <br>
 NIM  : 24.12.3378
 
 https://eventamikom3378.free.laravel.cloud/
