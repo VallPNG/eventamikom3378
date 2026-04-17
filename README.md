@@ -1,3 +1,4 @@
+<pre>
 NAMA         : VALEDHIKA FIKRI
 NIM          : 24.12.3378
 LINK         : <a href="https://eventamikom3378.free.laravel.cloud/">https://eventamikom3378.free.laravel.cloud/</a>
@@ -7,7 +8,8 @@ LINK PROFIL  : <a href="https://eventamikom3378.free.laravel.cloud/profil">https
 LINK KATALOG : <a href="https://eventamikom3378.free.laravel.cloud/katalog">https://eventamikom3378.free.laravel.cloud/katalog</a>
 LINK BANTUAN : <a href="https://eventamikom3378.free.laravel.cloud/bantuan">https://eventamikom3378.free.laravel.cloud/bantuan</a>
 LINK KONTAK  : <a href="https://eventamikom3378.free.laravel.cloud/kontak">https://eventamikom3378.free.laravel.cloud/kontak</a>
-
+</pre>
+    
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
