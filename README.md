@@ -1,4 +1,3 @@
-| | | |
 | --- | --- | --- |
 | **NAMA** | : | VALEDHIKA FIKRI |
 | **NIM** | : | 24.12.3378 |
@@ -6,7 +5,7 @@
 
 <br>
 
-| TUGAS 1 | | |
+| TUGAS 1 | |
 | --- | --- | --- |
 | **LINK PROFIL** | : | https://eventamikom3378.free.laravel.cloud/profil |
 | **LINK KATALOG** | : | https://eventamikom3378.free.laravel.cloud/katalog |
