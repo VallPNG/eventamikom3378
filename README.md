@@ -3,6 +3,12 @@ NIM  : 24.12.3378
 <br>
 LINK : https://eventamikom3378.free.laravel.cloud/
 
+TUGAS 1 <br>
+LINK PROFIL : https://eventamikom3378.free.laravel.cloud/profil <br>
+LINK KATALOG : https://eventamikom3378.free.laravel.cloud/katalog <br>
+LINK BANTUAN : https://eventamikom3378.free.laravel.cloud/bantuan <br>
+LINK KONTAK : https://eventamikom3378.free.laravel.cloud/kontak <br>
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
