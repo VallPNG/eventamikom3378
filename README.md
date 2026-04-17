@@ -7,7 +7,10 @@ TUGAS 1
 LINK PROFIL  : <a href="https://eventamikom3378.free.laravel.cloud/profil">https://eventamikom3378.free.laravel.cloud/profil</a>
 LINK KATALOG : <a href="https://eventamikom3378.free.laravel.cloud/katalog">https://eventamikom3378.free.laravel.cloud/katalog</a>
 LINK BANTUAN : <a href="https://eventamikom3378.free.laravel.cloud/bantuan">https://eventamikom3378.free.laravel.cloud/bantuan</a>
-LINK KONTAK  : <a href="https://eventamikom3378.free.laravel.cloud/kontak">https://eventamikom3378.free.laravel.cloud/kontak</a>
+LINK KONTAK  : <a href="https://eventamikom3378.free.laravel.cloud/kontak">https://eventamikom3378.free.laravel.cloud/kontak
+
+TUGAS 2
+< a href=""></a>
 </pre>
     
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
