@@ -1,13 +1,14 @@
-NAMA : VALEDHIKA FIKRI <br>
-NIM  : 24.12.3378
-<br>
-LINK : https://eventamikom3378.free.laravel.cloud/
+```text
+NAMA         : VALEDHIKA FIKRI
+NIM          : 24.12.3378
+LINK         : [https://eventamikom3378.free.laravel.cloud/](https://eventamikom3378.free.laravel.cloud/)
 
-TUGAS 1 <br>
-LINK PROFIL : https://eventamikom3378.free.laravel.cloud/profil <br>
-LINK KATALOG : https://eventamikom3378.free.laravel.cloud/katalog <br>
-LINK BANTUAN : https://eventamikom3378.free.laravel.cloud/bantuan <br>
-LINK KONTAK : https://eventamikom3378.free.laravel.cloud/kontak <br>
+TUGAS 1
+LINK PROFIL  : [https://eventamikom3378.free.laravel.cloud/profil](https://eventamikom3378.free.laravel.cloud/profil)
+LINK KATALOG : [https://eventamikom3378.free.laravel.cloud/katalog](https://eventamikom3378.free.laravel.cloud/katalog)
+LINK BANTUAN : [https://eventamikom3378.free.laravel.cloud/bantuan](https://eventamikom3378.free.laravel.cloud/bantuan)
+LINK KONTAK  : [https://eventamikom3378.free.laravel.cloud/kontak](https://eventamikom3378.free.laravel.cloud/kontak)
+```
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
