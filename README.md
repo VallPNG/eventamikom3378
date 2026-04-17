@@ -10,12 +10,12 @@ LINK BANTUAN : <a href="https://eventamikom3378.free.laravel.cloud/bantuan">http
 LINK KONTAK  : <a href="https://eventamikom3378.free.laravel.cloud/kontak">https://eventamikom3378.free.laravel.cloud/kontak</a>
 
 TUGAS 2
-LINK DASHBOARD       : <a href="https://eventamikom3378.free.laravel.cloud/admin-dashboard.html">https://eventamikom3378.free.laravel.cloud/admin-dashboard.html</a>
-LINK EVENT           : <a href="https://eventamikom3378.free.laravel.cloud/admin-events.html">https://eventamikom3378.free.laravel.cloud/admin-events.html</a>
-LINK TRANSAKSI       : <a href="https://eventamikom3378.free.laravel.cloud/admin-transactions.html">https://eventamikom3378.free.laravel.cloud/admin-transactions.html</a>
-LINK BERANDA         : <a href="https://eventamikom3378.free.laravel.cloud/">https://eventamikom3378.free.laravel.cloud/</a>
-LINK DETAIL EVENT    : <a href="https://eventamikom3378.free.laravel.cloud/event-detail.html">https://eventamikom3378.free.laravel.cloud/event-detail.html</a>
-LINK CHECKOUT        : <a href="https://eventamikom3378.free.laravel.cloud/checkout.html">https://eventamikom3378.free.laravel.cloud/checkout.html</a>
+LINK DASHBOARD    : <a href="https://eventamikom3378.free.laravel.cloud/admin-dashboard.html">https://eventamikom3378.free.laravel.cloud/admin-dashboard.html</a>
+LINK EVENT        : <a href="https://eventamikom3378.free.laravel.cloud/admin-events.html">https://eventamikom3378.free.laravel.cloud/admin-events.html</a>
+LINK TRANSAKSI    : <a href="https://eventamikom3378.free.laravel.cloud/admin-transactions.html">https://eventamikom3378.free.laravel.cloud/admin-transactions.html</a>
+LINK BERANDA      : <a href="https://eventamikom3378.free.laravel.cloud/">https://eventamikom3378.free.laravel.cloud/</a>
+LINK DETAIL EVENT : <a href="https://eventamikom3378.free.laravel.cloud/event-detail.html">https://eventamikom3378.free.laravel.cloud/event-detail.html</a>
+LINK CHECKOUT     : <a href="https://eventamikom3378.free.laravel.cloud/checkout.html">https://eventamikom3378.free.laravel.cloud/checkout.html</a>
 </pre>
     
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
