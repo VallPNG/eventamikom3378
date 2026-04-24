@@ -4,13 +4,18 @@ NIM          : 24.12.3378
 LINK         : <a href="https://eventamikom3378.free.laravel.cloud/">https://eventamikom3378.free.laravel.cloud/</a>
 
 TUGAS 1
-LINK PROFIL  : <a href="https://eventamikom3378.free.laravel.cloud/profil">https://eventamikom3378.free.laravel.cloud/profil</a>
-LINK KATALOG : <a href="https://eventamikom3378.free.laravel.cloud/katalog">https://eventamikom3378.free.laravel.cloud/katalog</a>
-LINK BANTUAN : <a href="https://eventamikom3378.free.laravel.cloud/bantuan">https://eventamikom3378.free.laravel.cloud/bantuan</a>
-LINK KONTAK  : <a href="https://eventamikom3378.free.laravel.cloud/kontak">https://eventamikom3378.free.laravel.cloud/kontak</a>
+HALAMAN PROFIL  : <a href="https://eventamikom3378.free.laravel.cloud/profil">https://eventamikom3378.free.laravel.cloud/profil</a>
+HALAMAN KATALOG : <a href="https://eventamikom3378.free.laravel.cloud/katalog">https://eventamikom3378.free.laravel.cloud/katalog</a>
+HALAMAN BANTUAN : <a href="https://eventamikom3378.free.laravel.cloud/bantuan">https://eventamikom3378.free.laravel.cloud/bantuan</a>
+HALAMAN KONTAK  : <a href="https://eventamikom3378.free.laravel.cloud/kontak">https://eventamikom3378.free.laravel.cloud/kontak</a>
 
 TUGAS 2
-<a href=""></a>
+HALAMAN DASHBOARD    : <a href="https://eventamikom3378.free.laravel.cloud/admin-dashboard.html">https://eventamikom3378.free.laravel.cloud/admin-dashboard.html</a>
+HALAMAN EVENT        : <a href="https://eventamikom3378.free.laravel.cloud/admin-events.html">https://eventamikom3378.free.laravel.cloud/admin-events.html</a>
+HALAMAN TRANSAKSI    : <a href="https://eventamikom3378.free.laravel.cloud/admin-transactions.html">https://eventamikom3378.free.laravel.cloud/admin-transactions.html</a>
+HALAMAN BERANDA      : <a href="https://eventamikom3378.free.laravel.cloud/">https://eventamikom3378.free.laravel.cloud/</a>
+HALAMAN DETAIL EVENT : <a href="https://eventamikom3378.free.laravel.cloud/event-detail.html">https://eventamikom3378.free.laravel.cloud/event-detail.html</a>
+HALAMAN CHECKOUT     : <a href="https://eventamikom3378.free.laravel.cloud/checkout.html">https://eventamikom3378.free.laravel.cloud/checkout.html</a>
 </pre>
     
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
