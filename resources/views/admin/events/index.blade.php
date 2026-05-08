@@ -34,7 +34,7 @@
                     </td>
                     <td class="px-8 py-6">
                         <p class="font-black text-slate-800">{{ $event->title }}</p>
-                        <p class="text-xs text-slate-400">{{ $event->category->name }} • {{ \Carbon\Carbon::parse($event->date)->format('d M Y') }}</p>
+                        <p class="text-xs text-slate-400">{{ $event->category?->name ?? 'Tanpa Kategori' }} • {{ \Carbon\Carbon::parse($event->date)->format('d M Y') }}</p>
                     </td>
                     <td class="px-8 py-6">
                         <p class="font-bold text-indigo-600">Rp {{ number_format($event->price, 0, ',', '.') }}</p>
