@@ -17,6 +17,9 @@ HALAMAN BERANDA      : <a href="https://eventamikom3378.free.laravel.cloud/">htt
 HALAMAN DETAIL EVENT : <a href="https://eventamikom3378.free.laravel.cloud/event-detail.html">https://eventamikom3378.free.laravel.cloud/event-detail.html</a>
 HALAMAN CHECKOUT     : <a href="https://eventamikom3378.free.laravel.cloud/checkout.html">https://eventamikom3378.free.laravel.cloud/checkout.html</a>
 </pre>
+
+TUGAS 3
+MIGRASI DAN SEEDING DATABASE
     
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
