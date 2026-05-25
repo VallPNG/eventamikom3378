@@ -150,5 +150,43 @@
                 </div>
             </div>
         </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="max-w-7xl mx-auto px-6 py-10">
+        <div class="mb-8 text-center">
+            <h2 class="text-3xl font-extrabold mb-2">Partner Kami</h2>
+            <p class="text-slate-500 font-medium">Bekerja sama dengan berbagai organisasi hebat</p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+            @foreach($partners as $partner)
+            <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-4 flex flex-col items-center justify-center hover:shadow-md transition">
+                @if($partner->logo_url)
+                    <img src="{{ $partner->logo_url }}" alt="{{ $partner->name }}" class="h-16 object-contain mb-3">
+                @else
+                    <div class="h-16 w-16 bg-slate-100 rounded-full flex items-center justify-center mb-3">
+                        <span class="text-slate-400 font-bold">{{ substr($partner->name, 0, 1) }}</span>
+                    </div>
+                @endif
+                <h3 class="text-sm font-bold text-center">{{ $partner->name }}</h3>
+            </div>
+            @endforeach
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="max-w-7xl mx-auto px-6 py-10 mb-10 bg-slate-50 rounded-3xl">
+        <div class="mb-8">
+            <h2 class="text-3xl font-extrabold mb-2">Kategori Event</h2>
+            <p class="text-slate-500 font-medium">Temukan event berdasarkan minatmu</p>
+        </div>
+        <div class="flex flex-wrap gap-4">
+            @foreach($categories as $category)
+            <a href="#" class="px-6 py-3 bg-white border border-slate-200 rounded-full font-bold text-indigo-600 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 transition shadow-sm">
+                {{ $category->name }}
+            </a>
+            @endforeach
+        </div>
     </section>
 @endsection
