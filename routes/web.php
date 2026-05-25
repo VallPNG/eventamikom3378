@@ -6,18 +6,21 @@ use App\Http\Controllers\EventController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Admin\EventController as EventAdminController;
 
-Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::get('/event/1', [EventController::class, 'show'])->name('events.show');
-Route::get('/checkout', [EventController::class, 'checkout'])->name('checkout');
-Route::get('/my-ticket', [EventController::class, 'ticket'])->name('ticket');
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\PartnerController;
+use App\Http\Controllers\WelcomeController;
+
+Route::get('/', [WelcomeController::class, 'index'])->name('home');
+Route::get('/event/1', [App\Http\Controllers\EventController::class, 'show'])->name('events.show');
+Route::get('/checkout', [App\Http\Controllers\EventController::class, 'checkout'])->name('checkout');
+Route::get('/my-ticket', [App\Http\Controllers\EventController::class, 'ticket'])->name('ticket');
 Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
-    Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
-    Route::resource('events', EventAdminController::class);
+    Route::get('/', [App\Http\Controllers\Admin\DashboardController::class, 'index'])->name('dashboard');
+    Route::resource('events', App\Http\Controllers\Admin\EventController::class);
 });
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::resource('categories', CategoryController::class);
+Route::resource('partners', PartnerController::class);
 
 Route::get('/profil', function () {
     return view('profil');
