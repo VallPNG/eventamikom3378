@@ -30,7 +30,7 @@ class AuthController extends Controller
         }
 
         return back()->withErrors([
-            'email' => 'Email atau Password yang Anda berikan tidak terdaftar di database kami.',
+            'email' => 'Email atau Password salah.',
         ]);
     }
 
