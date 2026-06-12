@@ -16,7 +16,6 @@ Route::get('/event/{event}', [EventController::class, 'show'])->name('events.sho
 // Grouping untuk URL berawalan /admin
 Route::prefix('admin')->name('admin.')->group(function () {
     
-    // Rute Login bebas akses
     Route::get('login', [AuthController::class, 'showLogin'])->name('login');
     Route::post('login', [AuthController::class, 'login'])->name('login.post');
     Route::post('logout', [AuthController::class, 'logout'])->name('logout');
