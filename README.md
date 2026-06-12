@@ -22,7 +22,6 @@ MIGRASI DAN SEEDING DATABASE
 
 TUGAS 4
 HALAMAN CRUD ADMIN EVENT : <a href="https://eventamikom3378.free.laravel.cloud/admin/login">https://eventamikom3378.free.laravel.cloud/admin/login</a>
-</pre>
 
 TUGAS 8
 HALAMAN LOGIN : <a href="https://eventamikom3378.free.laravel.cloud/admin/events">https://eventamikom3378.free.laravel.cloud/admin/events</a>
