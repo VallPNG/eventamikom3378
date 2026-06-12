@@ -1,12 +1,14 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Admin\EventController as EventAdminController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\PartnerController;
+use App\Http\Controllers\Admin\TransactionController;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/event/1', [EventController::class, 'show'])->name('events.show');
@@ -37,4 +39,22 @@ Route::get('/kontak', function () {
 
 Route::get('/tentang', function() {
     return '<h1>Ini adalah halaman tentang aplikasi Event Hub</h1>';
+});
+
+Route::get('/login', function () {
+    return redirect()->route('admin.login');
+})->name('login');
+
+Route::prefix('admin')->name('admin.')->group(function () {
+    
+    Route::get('login', [AuthController::class, 'showLogin'])->name('login');
+    Route::post('login', [AuthController::class, 'login'])->name('login.post');
+    Route::post('logout', [AuthController::class, 'logout'])->name('logout');
+
+    Route::middleware(['auth', 'admin'])->group(function () {
+        Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
+        Route::resource('events', EventController::class);
+        Route::get('transactions', [TransactionController::class, 'index'])->name('transactions.index');
+    });
+    
 });
