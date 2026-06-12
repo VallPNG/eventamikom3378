@@ -12,9 +12,7 @@ use App\Http\Controllers\PartnerController;
 use App\Http\Controllers\TicketController;
 
 Route::get('/', [WelcomeController::class, 'index'])->name('home');
-Route::get('/event/1', [EventController::class, 'show'])->name('events.show');
-Route::get('/checkout', [EventController::class, 'checkout'])->name('checkout');
-Route::get('/my-ticket', [EventController::class, 'ticket'])->name('ticket');
+Route::get('/event/{event}', [EventController::class, 'show'])->name('events.show');
 // Grouping untuk URL berawalan /admin
 Route::prefix('admin')->name('admin.')->group(function () {
     
@@ -65,4 +63,17 @@ Route::post('/checkout/{event}', [App\Http\Controllers\CheckoutController::class
 Route::get('/ticket/{order_id}', [TicketController::class, 'show'])->name('ticket.show');
 
 Route::get('transactions', [\App\Http\Controllers\Admin\TransactionController::class, 'index'])->name('transactions.index');
+
+Route::get('/index.html', function () {
+    return redirect()->route('home');
+});
+Route::get('/event-detail.html', function () {
+    return redirect()->route('events.show', 1);
+});
+Route::get('/checkout.html', function () {
+    return redirect()->route('checkout.create', 1);
+});
+Route::get('/ticket.html', function () {
+    return redirect()->route('home');
+});
 
