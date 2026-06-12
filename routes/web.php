@@ -62,8 +62,6 @@ Route::post('/checkout/{event}', [App\Http\Controllers\CheckoutController::class
 
 Route::get('/ticket/{order_id}', [TicketController::class, 'show'])->name('ticket.show');
 
-Route::get('transactions', [\App\Http\Controllers\Admin\TransactionController::class, 'index'])->name('transactions.index');
-
 Route::get('/index.html', function () {
     return redirect()->route('home');
 });
