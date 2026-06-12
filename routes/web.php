@@ -9,6 +9,7 @@ use App\Http\Controllers\Admin\TransactionController;
 use App\Http\Controllers\Admin\EventController as EventAdminController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\PartnerController;
+use App\Http\Controllers\TicketController;
 
 Route::get('/', [WelcomeController::class, 'index'])->name('home');
 Route::get('/event/1', [EventController::class, 'show'])->name('events.show');
@@ -57,3 +58,11 @@ Route::get('/tentang', function() {
 Route::get('/login', function () {
     return redirect()->route('admin.login');
 })->name('login');
+
+Route::get('/checkout/{event}', [App\Http\Controllers\CheckoutController::class, 'create'])->name('checkout.create');
+Route::post('/checkout/{event}', [App\Http\Controllers\CheckoutController::class, 'store'])->name('checkout.store');
+
+Route::get('/ticket/{order_id}', [TicketController::class, 'show'])->name('ticket.show');
+
+Route::get('transactions', [\App\Http\Controllers\Admin\TransactionController::class, 'index'])->name('transactions.index');
+
