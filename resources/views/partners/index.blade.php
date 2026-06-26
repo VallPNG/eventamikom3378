@@ -39,7 +39,8 @@
                             <td class="px-6 py-4 font-bold text-slate-900">{{ $partner->name }}</td>
                             <td class="px-6 py-4">
                                 @if($partner->logo_url)
-                                    <img src="{{ $partner->logo_url }}" alt="Logo {{ $partner->name }}" class="h-10 object-contain rounded-md border border-slate-100 p-1 bg-white">
+                                    <img src="{{ $partner->logo_url }}" alt="Logo {{ $partner->name }}" class="h-10 object-contain rounded-md border border-slate-100 p-1 bg-white inline-block" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+                                    <span style="display:none;" class="inline-block px-3 py-1 bg-slate-100 text-slate-500 rounded-full text-xs font-medium">{{ $partner->name }}</span>
                                 @else
                                     <span class="inline-block px-3 py-1 bg-slate-100 text-slate-500 rounded-full text-xs font-medium">Tidak ada logo</span>
                                 @endif

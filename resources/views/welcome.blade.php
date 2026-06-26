@@ -68,7 +68,7 @@
                 class="group bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-2xl transition-all duration-300 overflow-hidden">
                 <div class="relative overflow-hidden aspect-[3/4]">
                     <img src="{{ ($event->poster_path && Storage::disk('public')->exists($event->poster_path)) ? asset('storage/' . $event->poster_path) : asset('assets/concert.png') }}" alt="{{ $event->title }}"
-                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.src='{{ asset('assets/concert.png') }}'">
                     <div
                         class="absolute top-4 left-4 px-3 py-1 bg-white/90 backdrop-blur rounded-lg text-xs font-bold uppercase text-indigo-600">
                         {{ $event->category->name ?? 'Event' }}</div>
@@ -125,7 +125,10 @@
             @foreach($partners as $partner)
             <div class="w-36 md:w-44 lg:w-48 bg-white rounded-2xl border border-slate-100 shadow-sm p-4 flex flex-col items-center justify-center hover:shadow-md transition">
                 @if($partner->logo_url)
-                    <img src="{{ $partner->logo_url }}" alt="{{ $partner->name }}" class="h-16 object-contain mb-3">
+                    <img src="{{ $partner->logo_url }}" alt="{{ $partner->name }}" class="h-16 object-contain mb-3 inline-block" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div style="display:none;" class="h-16 w-16 bg-slate-100 rounded-full flex items-center justify-center mb-3">
+                        <span class="text-slate-400 font-bold">{{ substr($partner->name, 0, 1) }}</span>
+                    </div>
                 @else
                     <div class="h-16 w-16 bg-slate-100 rounded-full flex items-center justify-center mb-3">
                         <span class="text-slate-400 font-bold">{{ substr($partner->name, 0, 1) }}</span>
