@@ -74,3 +74,6 @@ Route::get('/ticket.html', function () {
     return redirect()->route('home');
 });
 
+Route::get('/payment/{order_id}', [\App\Http\Controllers\CheckoutController::class, 'payment'])->name('checkout.payment');
+
+Route::get('/success/{order_id}', [\App\Http\Controllers\CheckoutController::class, 'success'])->name('checkout.success');
