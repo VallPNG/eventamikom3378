@@ -32,7 +32,9 @@ HALAMAN LAPORAN TRANSAKSI : <a href="https://eventamikom3378.free.laravel.cloud/
 INFINITYFREE : : <a href="http://amikomeventhub3378.gt.tc/">http://amikomeventhub3378.gt.tc/</a>
 
 TUGAS 11
-HALAMAN MIDTRANS : <a href="https://eventamikom3378.free.laravel.cloud/payment">https://eventamikom3378.free.laravel.cloud/payment</a>
+HALAMAN CHECKOUT :<a href="https://eventamikom3378.free.laravel.cloud/checkout/4">https://eventamikom3378.free.laravel.cloud/checkout/4</a>
+HALAMAN MIDTRANS : <a href="https://eventamikom3378.free.laravel.cloud/success/TRX-1782462311-Uf9Zn">https://eventamikom3378.free.laravel.cloud/success/TRX-1782462311-Uf9Zn</a>
+HALAMAN LAPORAN TRX :<a href="https://eventamikom3378.free.laravel.cloud/admin/transactions">https://eventamikom3378.free.laravel.cloud/admin/transactions</a>
     
 </pre>
     
