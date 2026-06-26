@@ -31,7 +31,7 @@ class CheckoutController extends Controller
         return back()->with('error', 'Mohon maaf, tiket untuk acara ini sudah habis.');
     }
 
-    // 3. Generate Kode TRX (Unik)
+    // 3. Generate Kode TRX
     $orderId = 'TRX-' . time() . '-' . Str::random(5);
     $totalPrice = $event->price + 5000; 
 

@@ -33,7 +33,6 @@
              onSuccess: function(result){
                  window.location.href = "{{ route('checkout.success', $transaction->order_id) }}";
              },
-             // Optional
              onPending: function(result){
                  window.location.href = "{{ route('checkout.success', $transaction->order_id) }}";
              },
