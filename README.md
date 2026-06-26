@@ -29,10 +29,10 @@ HALAMAN LOGIN : <a href="https://eventamikom3378.free.laravel.cloud/admin/login"
 TUGAS 10
 HALAMAN LAPORAN TRANSAKSI : <a href="https://eventamikom3378.free.laravel.cloud/admin/transactions">https://eventamikom3378.free.laravel.cloud/admin/transactions</a>
 
-LINK INFINITYFREE : : <a href="http://amikomeventhub3378.gt.tc/">http://amikomeventhub3378.gt.tc/</a>
+INFINITYFREE : : <a href="http://amikomeventhub3378.gt.tc/">http://amikomeventhub3378.gt.tc/</a>
 
 TUGAS 11
-HALAMAN MIDTRANS : <a href="https://eventamikom3378.free.laravel.cloud/admin/transactions">https://eventamikom3378.free.laravel.cloud/admin/transactions</a>
+HALAMAN MIDTRANS : <a href="https://eventamikom3378.free.laravel.cloud/payment">https://eventamikom3378.free.laravel.cloud/payment</a>
     
 </pre>
     
