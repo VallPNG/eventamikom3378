@@ -25,6 +25,10 @@ HALAMAN CRUD ADMIN EVENT : <a href="https://eventamikom3378.free.laravel.cloud/a
 
 TUGAS 8
 HALAMAN LOGIN : <a href="https://eventamikom3378.free.laravel.cloud/admin/login">https://eventamikom3378.free.laravel.cloud/admin/login</a>
+
+TUGAS 10
+HALAMAN LAPORAN TRANSAKSI : <a href="https://eventamikom3378.free.laravel.cloud/admin/transactions">https://eventamikom3378.free.laravel.cloud/admin/transactions</a>
+    
 </pre>
     
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
