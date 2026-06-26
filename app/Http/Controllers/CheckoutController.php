@@ -34,12 +34,23 @@ class CheckoutController extends Controller
     // 3. Generate Kode TRX (Unik)
     $orderId = 'TRX-' . time() . '-' . Str::random(5);
     $totalPrice = $event->price + 5000; 
+
+    // Simpan data transaksi awal (Pending) ke database
+    $transaction = Transaction::create([
+        'event_id' => $event->id,
+        'order_id' => $orderId,
+        'customer_name' => $request->customer_name,
+        'customer_email' => $request->customer_email,
+        'customer_phone' => $request->customer_phone,
+        'total_price' => $totalPrice,
+        'status' => 'Pending',
+    ]);
         
         // Konfigurasi Kredensial Environment Midtrans
-        \Midtrans\Config::$serverKey = env('MIDTRANS_SERVER_KEY');
-        \Midtrans\Config::$isProduction = false; // Mode Sandbox!
-        \Midtrans\Config::$isSanitized = true;
-        \Midtrans\Config::$is3ds = true;
+        \Midtrans\Config::$serverKey = config('midtrans.serverKey');
+        \Midtrans\Config::$isProduction = config('midtrans.isProduction');
+        \Midtrans\Config::$isSanitized = config('midtrans.isSanitized');
+        \Midtrans\Config::$is3ds = config('midtrans.is3ds');
 
         // Susun Paket Array Data Transaksi
         $params = [
@@ -65,6 +76,10 @@ class CheckoutController extends Controller
             return redirect()->route('checkout.payment', $transaction->order_id);
             
         } catch (\Exception $e) {
+            // Hapus data transaksi jika gagal mendapatkan token pembayaran
+            if (isset($transaction)) {
+                $transaction->delete();
+            }
             return back()->with('error', 'Gagal memproses pembayaran jaringan: ' . $e->getMessage());
         }
     }
@@ -83,18 +98,21 @@ class CheckoutController extends Controller
         // Mengambil daftar kategori untuk keperluan menu footer
          $categories = \App\Models\Category::all();
 
-         $transaction = Transaction::where('order_id', $order_id)->firstOrFail();
+         $transaction = Transaction::with('event')->where('order_id', $order_id)->firstOrFail();
          
          // Validasi status pembayaran asli dari Midtrans (Mencegah manipulasi URL)
-         \Midtrans\Config::$serverKey = env('MIDTRANS_SERVER_KEY');
-         \Midtrans\Config::$isProduction = false;
+         \Midtrans\Config::$serverKey = config('midtrans.serverKey');
+         \Midtrans\Config::$isProduction = config('midtrans.isProduction');
          
          try {
              $midtransStatus = \Midtrans\Transaction::status($order_id);
              
              // Hanya ubah status menjadi sukses jika Midtrans mengonfirmasi pembayaran lunas
              if (in_array($midtransStatus->transaction_status, ['capture', 'settlement'])) {
-                 $transaction->update(['status' => 'success']);
+                 if ($transaction->status !== 'success') {
+                     $transaction->update(['status' => 'success']);
+                     $transaction->event->decrement('stock');
+                 }
              }
          } catch (\Exception $e) {
              // Jika error (transaksi tidak ada di Midtrans, koneksi terputus), kembalikan ke beranda
