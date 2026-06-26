@@ -34,8 +34,8 @@
                     </p>
                 </td>
                 <td class="px-8 py-6 text-sm font-medium text-slate-500">
-                    {{ $trx->created_at->format('d M Y') }} <br>
-                    <span class="text-xs text-slate-400">{{ $trx->created_at->format('H:i') }} WIB</span>
+                    {{ $trx->created_at->timezone('Asia/Jakarta')->format('d M Y') }} <br>
+                    <span class="text-xs text-slate-400">{{ $trx->created_at->timezone('Asia/Jakarta')->format('H:i') }} WIB</span>
                 </td>
                 <td class="px-8 py-6">
                     @if($trx->status === 'settlement' || $trx->status === 'success')
